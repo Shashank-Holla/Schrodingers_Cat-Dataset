@@ -21,8 +21,9 @@ Below are some of the examples of images, number of images of each directory.
 ### Background (bg)
 
 This directory contains images of Home interiors. These are the background images. 
-Total number of images = 100
-Image size= 192 x 192 resolution
+
+* Total number of images = 100
+* Image size = 192 x 192 resolution
 
 
 ![](https://github.com/Shashank-Holla/TSAI-EVA4/blob/master/Session14_RCNN%26DenseDepth/results/bg.jpg)
@@ -31,28 +32,40 @@ Image size= 192 x 192 resolution
 ### Foreground (fg)
 
 This directory contains images of cats. These are the foreground images. 
-Total number of images= 100.
+
+* Total number of images= 100
+* Image size = X x 80 (Foreground images have fixed height of 80 while the width is depends on the aspect ratio of the foreground object).
+* Includes alpha channel to maintain transparency details
 
 ![](https://github.com/Shashank-Holla/TSAI-EVA4/blob/master/Session14_RCNN%26DenseDepth/results/fg.png)
 
 
 ### Overlayed images (bg_fg)
 
-This directory contains the overlayed images. Total images= 400K
+This directory contains the resultant image of the foreground overlayed on the background. 
+
+* Total number of images = 400K
+* Image size = 192 x 192 resolution
 
 ![](https://github.com/Shashank-Holla/TSAI-EVA4/blob/master/Session14_RCNN%26DenseDepth/results/ov.jpg)
 
 
 ### Mask (mask)
 
-This directory contains the mask of the object of the corresponding overlayed image. Total images in the directory are 400K.
+This directory contains the mask of the object of the corresponding overlayed image. 
+
+* Total number of images = 400K
+* Image size = 192 x 192 resolution
 
 ![](https://github.com/Shashank-Holla/TSAI-EVA4/blob/master/Session14_RCNN%26DenseDepth/results/ma.jpg)
 
 
 ### Depth (depth)
 
-This directory contains the depth estimate maps of the corresponding overlayed image. Total images in the directory are 400K.
+This directory contains the depth estimate maps of the corresponding overlayed image. 
+
+* Total number of images = 400K
+* Image size = 192 x 192 resolution
 
 ![](https://github.com/Shashank-Holla/TSAI-EVA4/blob/master/Session14_RCNN%26DenseDepth/results/de.jpg)
 
