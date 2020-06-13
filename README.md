@@ -20,14 +20,19 @@ Below are some of the examples of images, number of images of each directory.
 
 ### Background (bg)
 
-This directory contains background images. Total number of images = 100
+This directory contains images of Home interiors. These are the background images. 
+Total number of images = 100
+Image size= 192 x 192 resolution
+
 
 ![](https://github.com/Shashank-Holla/TSAI-EVA4/blob/master/Session14_RCNN%26DenseDepth/results/bg.jpg)
 
 
 ### Foreground (fg)
 
-This directory contains foreground images. Total number of images in the directory are 100.
+This directory contains images of cats. These are the foreground images. 
+Total number of images= 100.
+
 ![](https://github.com/Shashank-Holla/TSAI-EVA4/blob/master/Session14_RCNN%26DenseDepth/results/fg.png)
 
 
@@ -56,13 +61,13 @@ This directory contains the depth estimate maps of the corresponding overlayed i
 
 Below are the stats gathered for the dataset. Foreground images are scaled to a height of 80 while maintaining the aspect ratio.
 
-| Image Type | No of Images | Image Dimension | Total Imageset Size | Mean  | Std. Dev |
-|------------|--------------|-----------------|---------------------|-------|----------|
-| fg         | 100          |  192 * 192      |                     |       |          |
-| bg         | 100          |  x * 80         |                     |       |          |
-| fg_bg      | 400000       |  192 * 192      | 6 GB                |(0.6808, 0.6413, 0.5983) | (0.1943, 0.2126, 0.2364)  |
-| mask       | 400000       |  192 * 192      | 866 MB              |0.0614 |0.2373    |
-| depth      | 400000       |  192 * 192      | 1 GB                |0.4998       |0.2730          |
+| Image Type | No of Images | Number of channels | Image Dimension | Total Imageset Size | Mean  | Std. Dev |
+|------------|--------------|--------------------|-----------------|---------------------|-------|----------|
+| fg         | 100          | 4 (includes alpha) |  192 * 192      |                     |       |          |
+| bg         | 100          |       3            |  x * 80         |                     |(0.6897, 0.6509, 0.6079)      | (0.1890, 0.2089, 0.2345)         |
+| fg_bg      | 400000       |       3            |  192 * 192      | 6 GB                |(0.6808, 0.6413, 0.5983) | (0.1943, 0.2126, 0.2364)  |
+| mask       | 400000       |       1            |  192 * 192      | 866 MB              |0.0614 |0.2373    |
+| depth      | 400000       |       1            |  192 * 192      | 1 GB                |0.4998       |0.2730          |
 
 
 
